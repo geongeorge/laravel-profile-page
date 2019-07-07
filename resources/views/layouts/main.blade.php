@@ -1,7 +1,6 @@
 @include('includes.head')
 
-@yield('content')
 
-@include('includes.nav')
+@yield('content')
 
 @include('includes.foot')

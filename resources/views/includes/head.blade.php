@@ -27,7 +27,8 @@
             .flex-center {
                 align-items: center;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                flex-direction: column;
             }
 
             .position-ref {
@@ -47,10 +48,29 @@
             .title {
                 font-size: 74px;
             }
+            /* .links {
+              position: fixed;
+              top: 30px;
+              max-width: 500px;
+              margin: 0 auto;
+            } */
+            .links {
+              align-self: center;
+              padding-top: 30px;
+            }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            footer a {
+                color: #636b6f;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -65,4 +85,5 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+          @include('includes.nav')
             <div class="content">
