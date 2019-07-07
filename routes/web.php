@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('pages.welcome');
+    $tasks = [
+      'Make Project',
+      'Learn Laravel',
+      'Learn Nuxt'
+    ];
+    return view('pages.welcome',[
+      'tasks' => $tasks
+    ]);
 });
 
 Route::get('/contact', function () {

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('title', 'Welcome')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -44,16 +44,14 @@
             .content {
                 text-align: center;
             }
+            .text-left {
+              text-align: left;
+            }
+
 
             .title {
                 font-size: 74px;
             }
-            /* .links {
-              position: fixed;
-              top: 30px;
-              max-width: 500px;
-              margin: 0 auto;
-            } */
             .links {
               align-self: center;
               padding-top: 30px;
