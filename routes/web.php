@@ -11,21 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    $tasks = [
-      'Make Project',
-      'Learn Laravel',
-      'Learn Nuxt'
-    ];
-    return view('pages.welcome',[
-      'tasks' => $tasks
-    ]);
-});
+Route::get('/', 'PagesController@home');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/about', 'PagesController@about');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/contact', 'PagesController@contact');
