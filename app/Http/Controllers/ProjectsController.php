@@ -58,7 +58,7 @@ class ProjectsController extends Controller
 
     public function update($id) {
       //return request()->all();
-
+ 
       $project = Project::findOrFail($id);
 
       $project->title = request()->title;
