@@ -9,13 +9,21 @@
 
     {{csrf_field()}}
 
-    <input type="text" name="title" value="" size="60" placeholder="Title">
+    <input type="text" class="input {{$errors->has('title')? 'is-danger' : ''}}" name="title" size="60" placeholder="Title" value="{{old('title')}}">
     <br>
-    <textarea name="description" rows="8" cols="58">My project description
-    </textarea>
+    <textarea class="input {{$errors->has('description')? 'is-danger' : ''}}" name="description" rows="8" placeholder="My project description" cols="58" >{{old('description')}}</textarea>
     <br>
     <br>
-    <button type="submit" >Create project</button>
+    <button class="button" type="submit" >Create project</button>
 
   </form>
+
+@if($errors->any())
+  <div class='notification is-danger' style="margin-top: 20px;">
+    @foreach ($errors->all() as $err)
+      <p>{{ $err }}</p>
+    @endforeach
+  </div>
+@endif
+
 @endsection

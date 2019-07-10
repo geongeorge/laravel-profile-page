@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
 
         <!-- Styles -->
         <style>
@@ -78,6 +79,11 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+
+            textarea {
+              min-width: 300px;
+              min-height: 150px;
             }
         </style>
     </head>

@@ -11,12 +11,12 @@
 
     {{csrf_field()}}
 
-    <input type="text" name="title" value="{{$project->title}}" size="60" placeholder="Title">
+    <input type="text" class="input" name="title" value="{{$project->title}}" size="60" placeholder="Title">
     <br>
-    <textarea name="description" rows="8" cols="58">{{$project->description}}</textarea>
+    <textarea name="description" class="input" rows="8" cols="58">{{$project->description}}</textarea>
     <br>
     <br>
-    <button type="submit" >Save project</button>
+    <button class="button" type="submit" >Save project</button>
 
   </form>
 @endsection
