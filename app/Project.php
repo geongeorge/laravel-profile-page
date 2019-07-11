@@ -13,4 +13,9 @@ class Project extends Model
     // ];
 
     protected $guarded = []; //make sure you dont blindly input data
+
+    public function tasks()
+    {
+      return $this->hasMany(Task::class);
+    }
 }

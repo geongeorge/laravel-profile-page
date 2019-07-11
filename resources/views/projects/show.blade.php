@@ -8,6 +8,14 @@
     {{ $project->description }}
   </p>
 
+@if($project->tasks->count())
+  <div class="">
+    @foreach ($project->tasks as $task)
+      <li>{{ $task->description }}</li>
+    @endforeach
+  </div>
+@endif
+
   <a href="/projects/{{$project->id}}/edit">edit</a><br>
 
   <form action="/projects/{{$project->id}}" method="post">
