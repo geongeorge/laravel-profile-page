@@ -3,6 +3,8 @@
 @section('title','Projects')
 
 @section('content')
+  {{ Breadcrumbs::render('edit',$project) }}
+
   <h1>Edit Project</h1>
 
   <form action="/projects/{{$project->id}}" method="post">

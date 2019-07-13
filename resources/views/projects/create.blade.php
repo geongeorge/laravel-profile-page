@@ -3,6 +3,8 @@
 @section('title','Projects')
 
 @section('content')
+  {{ Breadcrumbs::render('create') }}
+
   <h1>Create Project</h1>
 
   <form action="/projects" method="post">
